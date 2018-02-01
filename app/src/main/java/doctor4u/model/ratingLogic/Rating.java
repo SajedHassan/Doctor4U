@@ -1,4 +1,4 @@
-package doctor4u.model.reviews;
+package doctor4u.model.ratingLogic;
 
 
 import doctor4u.model.rateables.RatedItem;
