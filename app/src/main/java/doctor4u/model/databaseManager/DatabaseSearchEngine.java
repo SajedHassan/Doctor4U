@@ -8,10 +8,7 @@ public interface DatabaseSearchEngine {
 
 
     User getUserByUsername(String userName);
-    boolean doesUserExist();
-
-
-
+    boolean doesUserExist(String userName);
 
 
 

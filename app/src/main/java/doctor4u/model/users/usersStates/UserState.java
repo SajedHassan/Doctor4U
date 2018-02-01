@@ -1,5 +1,8 @@
 package doctor4u.model.users.usersStates;
 
 
-public interface UserState {
+import doctor4u.model.users.User;
+
+public interface UserState extends User {
+
 }
