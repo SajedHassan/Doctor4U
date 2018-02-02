@@ -2,11 +2,12 @@ package doctor4u.model.notifications;
 
 
 import doctor4u.model.rateables.DoctorCard;
+import doctor4u.model.users.User;
 
 public interface Notification {
 
     String getNotificationMsg();
-    void getNotifiedUser();
+    User getNotifiedUser();
     DoctorCard getChangedDoctorCard();
     void notifyUser();
 

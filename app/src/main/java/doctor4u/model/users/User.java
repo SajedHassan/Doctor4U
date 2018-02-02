@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import doctor4u.model.DTOs.DoctorDetails;
 import doctor4u.model.DTOs.RegisteredUserDetails;
+import doctor4u.model.notifications.ConcreteNotification;
 import doctor4u.model.notifications.Notification;
 import doctor4u.model.rateables.DoctorCard;
 import doctor4u.model.rateables.RatedItem;
@@ -33,4 +34,6 @@ public interface User {
     void setDetailsAsDoctor(DoctorDetails details);
     DoctorDetails getDetailsAsDoctor();
     DoctorCard getDoctorCard();
+
+    void addNotification(Notification notification);
 }
