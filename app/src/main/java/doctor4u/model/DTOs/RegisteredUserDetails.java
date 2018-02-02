@@ -11,20 +11,20 @@ import doctor4u.model.reviews.Review;
 
 public class RegisteredUserDetails {
 
-    String userName;
-    String password;
-    int ID;
-    String mail;
-    String phone;
-    int gender;
-    Date birthDate;
-    int cityID;
+    public String userName;
+    public String password;
+    public int ID;
+    public String mail;
+    public String phone;
+    public int gender;
+    public Date birthDate;
+    public int cityID;
 
-    ArrayList<DoctorCard> favoriteDoctors;
-    ArrayList<Notification> notifications;
-    ArrayList<Review> reviews;
+    public ArrayList<DoctorCard> favoriteDoctors;
+    public  ArrayList<Notification> notifications;
+    public ArrayList<Review> reviews;
 
-    Stack<RateCommand> ratesMade;
-    Stack<RateCommand> undoneRates;
+    public Stack<RateCommand> ratesMade;
+    public Stack<RateCommand> undoneRates;
 
 }

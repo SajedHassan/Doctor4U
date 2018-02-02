@@ -5,20 +5,20 @@ import java.util.Date;
 
 public class RegisterDetails {
 
-    String userName;
-    String password;
-    String mail;
-    String phone;
-    int gender;
-    Date birthDate;
-    int cityID; // better than just a string
+    public String userName;
+    public String password;
+    public String mail;
+    public String phone;
+    public int gender;
+    public Date birthDate;
+    public int cityID; // better than just a string
 
-    int userType;
+    public int userType;
 
-    int[] hospitalsID;
-    int[] clinicsID;
-    String profession;
-    String education;
+    public int[] hospitalsID;
+    public int[] clinicsID;
+    public String profession;
+    public String education;
 
 
 }
