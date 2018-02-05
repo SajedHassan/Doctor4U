@@ -12,7 +12,6 @@ public interface RatedItem {
     int getNumberOfUsersRated();
 
     int getNumberOfViews();
-    ArrayList<User> getViewers();
 
     int getNumberOfReviews();
     ArrayList<Review> getReviews();
