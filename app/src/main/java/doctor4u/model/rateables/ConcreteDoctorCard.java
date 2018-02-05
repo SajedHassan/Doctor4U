@@ -17,15 +17,21 @@ public class ConcreteDoctorCard implements DoctorCard {
     private int numberOfViews;
     private int numberOfReviews;
     private String name;
-    private String profession;
+    private String speciality;
     private int age;
     private String description;
     private Contacts contacts;
+    private String scientificDegree;
 
 
     @Override
     public int getRating() {
         return rating;
+    }
+
+    @Override
+    public String getScientificDegree() {
+        return null;
     }
 
     @Override
@@ -64,9 +70,7 @@ public class ConcreteDoctorCard implements DoctorCard {
     }
 
     @Override
-    public String getProfession() {
-        return profession;
-    }
+    public String getSpeciality() { return speciality; }
 
     @Override
     public int getAge() {
@@ -129,9 +133,7 @@ public class ConcreteDoctorCard implements DoctorCard {
     }
 
     @Override
-    public void setProfession(String profession) {
-        this.profession = profession;
-    }
+    public void setSpeciality(String Speciality) { this.speciality = Speciality; }
 
     @Override
     public void setRating(int rating) {
@@ -142,4 +144,7 @@ public class ConcreteDoctorCard implements DoctorCard {
     public void setReviews(ArrayList<Review> reviews) {
         this.reviews = reviews;
     }
+
+    @Override
+    public void setScientificDegree(String scientificDegree) { this.scientificDegree = scientificDegree; }
 }

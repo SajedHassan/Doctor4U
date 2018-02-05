@@ -13,11 +13,12 @@ public interface DoctorCard extends RatedItem{
     ArrayList<ScheduleDetails> getHospitalDetails(); //name to be changed
     ArrayList<ScheduleDetails> getClinicsDetails(); //name to be changed
     String getName();
-    String getProfession(); // msh faker mgal y3ny eh
+    String getSpeciality();
     int getAge();
     String getBriefDescription();
     Contacts getContacts();
-
+    int getRating();
+    String getScientificDegree();
 
 
     // when creating the card
@@ -30,7 +31,8 @@ public interface DoctorCard extends RatedItem{
     void setName(String name);
     void setNumberOfReviews(int numberOfReviews);
     void setNumberOfViews(int numberOfViews);
-    void setProfession(String profession);
+    void setSpeciality(String Speciality);
     void setRating(int rating);
     void setReviews(ArrayList<Review> reviews);
+    void setScientificDegree(String degree); //e.g: esteshaary , a5esa2y ,...etc
 }

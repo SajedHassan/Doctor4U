@@ -81,4 +81,7 @@ public class AdminUserState implements UserState{
     public DoctorCard getDoctorCard() {
         return null;
     }
+
+    @Override
+    public void addNotification(Notification notification_){}
 }

@@ -9,5 +9,6 @@ public interface WorkingPlace extends RatedItem{
     ArrayList<DoctorCard> getWorkingDoctors();
     String getAddress();
     String getPhone();
+    void addToWorkingDoctors(DoctorCard card);
 
 }
