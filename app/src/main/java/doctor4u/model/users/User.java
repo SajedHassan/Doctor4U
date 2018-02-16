@@ -9,6 +9,7 @@ import doctor4u.model.notifications.Notification;
 import doctor4u.model.rateables.DoctorCard;
 import doctor4u.model.rateables.RatedItem;
 import doctor4u.model.ratingLogic.Rating;
+import doctor4u.model.reviews.Review;
 import doctor4u.model.users.usersStates.UserState;
 
 public interface User {
@@ -17,7 +18,7 @@ public interface User {
     void setState(UserState state);
 
     void setRegisteredUserDetails(RegisteredUserDetails details);
-    void addDoctorToFavorites();
+    void addDoctorToFavorites(DoctorCard doctor);
 
     ArrayList<Notification> getNotifications();
     ArrayList<DoctorCard> getFavoriteDoctors();
@@ -27,7 +28,7 @@ public interface User {
     ArrayList<Rating> getPreviousRates();
     void clearRateHistory();
 
-    void addReview(RatedItem item);
+    void addReview(Review item);
     void clearReviewHistory();
 
 

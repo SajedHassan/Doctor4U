@@ -17,6 +17,9 @@ public class ConcreteReview implements Review {
         this.composer =  composer;
         this.item = item;
         this.review = review;
+
+
+        //TODO must edit data base
     }
 
     @Override

@@ -8,6 +8,7 @@ import doctor4u.model.notifications.Notification;
 import doctor4u.model.rateables.DoctorCard;
 import doctor4u.model.rateables.RatedItem;
 import doctor4u.model.ratingLogic.Rating;
+import doctor4u.model.reviews.Review;
 
 
 public class GuestUserState implements UserState {
@@ -22,7 +23,7 @@ public class GuestUserState implements UserState {
     }
 
     @Override
-    public void addDoctorToFavorites() {
+    public void addDoctorToFavorites(DoctorCard doctor) {
 
     }
 
@@ -57,7 +58,7 @@ public class GuestUserState implements UserState {
     }
 
     @Override
-    public void addReview(RatedItem item) {
+    public void addReview(Review item) {
 
     }
 
